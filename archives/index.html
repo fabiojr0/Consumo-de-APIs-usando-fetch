@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    <main class="verificacotacao">
+        <h1>Site para verificar a cotação do real em relação a outras moedas.</h1>
+        <div class="display">
+        <button class="botao" onclick="cotacao('USD')">Dólar<img src="dolar.png"></button>
+        <button class="botao" onclick="cotacao('BTC')">Bitcoin<img src="bitcoin-removebg-preview.png"></button>
+        <button class="botao" onclick="cotacao('EUR')">Euro<img src="euro-removebg-preview.png"></button>
+        </div>
+        <h1>Cotação do <span class="título"></span></h1>
+        <div class="display">
+        
+        <p>Atual: <span class="ask"></span></p>
+        <p>Alta: <span class="high"></span></p>
+        <p>Baixa: <span class="low"></span></p>
+        </div>
+    </main>
+    <main class="verificacep">
+        <h1>Site para verificar as especificações de um cep.</h1>
+        <input type="text" class="cep" maxlength="8">
+        <button class="botao" onclick="consultarCep()">Consultar Cep</button>
+        <span class="dados"></span>
+        
+    </main>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
